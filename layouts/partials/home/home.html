@@ -1,0 +1,18 @@
+
+<img src="{{ .Params.background_image.image }}" alt="" class="uk-width-1-1">
+
+<div class="uk-section uk-section-large">
+    <div class="uk-container">
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-text-center">
+                <h1 class="uk-heading-small editable">{{ .Params.heading }}</h1>
+                <h2 class="uk-margin-remove editable">{{ .Params.subheading }}</h2>
+                <h2 class="uk-margin-remove editable">{{ .Params.second_subheading }}</h2>
+                <h2 class="editable">{{ .Params.third_subheading }}</h2>
+                <div class="uk-margin-large-top">
+                    <a href="{{ .Params.button_link }}" class="uk-button uk-button-primary">{{ .Params.button_label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<footer class="uk-section uk-text-center uk-section-small">
+    <span class="uk-text-small">&copy; Copyright {{ dateFormat "2006" now }}, SERHANT.</span>
+</footer>
+
+<script type="text/javascript">
+    $("#country").change(function(){
+        var selectedCountry = $(this).children("option:selected").val();
+        if(selectedCountry == "United States of America") {
+            //show state field
+            $("#state").show();
+            //add require attribute
+            $(".state").attr("required", true);
+        } else {
+            //hide state field
+            $("#state").hide();
+            //remove required attr
+            $(".state").removeAttr("required");
+
+        }
+      });
+
+      $("#title").change(function(){
+        var selectedTitle = $(this).children("option:selected").val();
+        if(selectedTitle == "yes") {
+            $("#brokerage").show();
+            $(".brokerage").attr("required", true);
+        } else {
+            $("#brokerage").hide();
+            $(".brokerage").removeAttr("required");
+
+        }
+      });
+</script>
+</body>
+</html>
