@@ -6,37 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 
     <style>
-        *{
+
+        body {
+            background: #efede7;
+        }
+        @font-face {
+  font-family: myriad;
+  src: url(uploads/MyriadPro-Regular.otf);
+}
+
+    footer p {
+        font-family: myriad!important;
+        letter-spacing: 2px;
+    }
+
+        * {
             font-family: 'Baskervville', serif!important;
         }
-
-        .content {
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            bottom: 20%;
-            text-align: center;
-        }
-
         .accent {
-            color: #b9a176ff;
+            color: #b9a176;
         }
 
-        div.content {
-            color: #b9a176ff;
+        div.content,
+        .content h1,
+        .content h2 {
+            color: #b9a176;
         }
 
-        .uk-button.uk-button-primary {
-            color: #b9a176ff;
+        .content .uk-button.uk-button-primary {
+            color: #b9a176;
             border: 1px solid #b9a176ff;
             background: transparent;
             text-transform: unset;
+            font-size: 18px;
         }
 
-        .uk-button.uk-button-primary:hover {
+        .content .uk-button.uk-button-primary:hover {
             background: #b9a176ff;
             border: 1px solid #b9a176ff;
+            color: #fff;
         }
         
     </style>
