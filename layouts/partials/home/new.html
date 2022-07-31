@@ -9,8 +9,42 @@
         <div class="uk-position-center">
             <img src="/uploads/laney-logo.png" alt="The Laney logo" width="400">
             <div class="uk-margin-medium-top">
-                <a href="mailto:the-laney@serhant.com" class="uk-button uk-button-primary">Get on the list</a>
+                <a href="#modal-center" class="uk-button uk-button-primary" uk-toggle>Get on the list</a>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="modal-center" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <form name="The Laney Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small inquire__form" uk-grid action="/thank-you">
+            <input name="bot-field" type="hidden" />
+            <input type="hidden" name="Subject" value="The Laney Form">
+            <div class="uk-width-1-1">
+                <p class="uk-margin-remove">NAME</p>
+            </div>
+            <div class="uk-width-1-2@s">
+                <input class="uk-input" type="text" name="First Name" id="uk-input-fname" required>
+                <label for="uk-input-fname" class="uk-text-default">First name</label>
+            </div>
+            <div class="uk-width-1-2@s">
+                <input class="uk-input" type="text" name="Last Name" id="uk-input-lname" required>
+                <label for="uk-input-lname" class="uk-text-default">Last name</label>
+        
+            </div>
+            <div class="uk-width-1-1@s">
+                <input class="uk-input" type="email" id="input-email" name="Email" placeholder="Email" required>
+            </div>
+            <div class="uk-width-1-1">
+                <textarea name="message" id="" cols="30" rows="3" class="uk-textarea" name="Message" placeholder="Message"></textarea>
+            </div>
+            <div class="uk-width-1-1">
+                <button class="uk-button uk-button-primary">Submit</button>
+            </div>
+        </form>
+
     </div>
 </div>
