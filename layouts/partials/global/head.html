@@ -7,12 +7,23 @@
 
     <style>
 
-        body {
-            background: #efede7;
+        body, html {
+            background: #f1ebe8!important;
         }
         @font-face {
   font-family: myriad;
   src: url(uploads/MyriadPro-Regular.otf);
+}
+
+video.uk-cover {
+    top: 38%;
+}
+
+@media screen and (max-width: 768px) {
+    video.uk-cover {
+        padding: 50px;
+    }
+    
 }
 
     footer p {
@@ -41,10 +52,20 @@
             font-size: 18px;
         }
 
-        .uk-button.uk-button-primary:hover {
+        .uk-button.uk-button-primary:hover,
+        .uk-button.uk-button-primary:focus {
             background: #b9a176ff;
             border: 1px solid #b9a176ff;
             color: #fff;
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            bottom: 15%;
         }
         
     </style>
